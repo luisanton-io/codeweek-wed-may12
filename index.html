@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar">
+            <img src="assets/spotify-logo.png">
+            <ul>
+                <li>
+                    <ion-icon name="home"></ion-icon>
+                    Home
+                </li>
+                <li>
+                    <ion-icon name="search"></ion-icon>
+                    Search
+                </li>
+                <li>
+                    <ion-icon name="grid"></ion-icon>
+                    Library
+                </li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <div class="search-wrapper">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="search" placeholder="Search...">
+                </div>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/album-cover.jpeg">
+                        <ion-icon name="play-sharp"></ion-icon>
+                    </div>
+                    <div class="card-body">
+                        <p>Artist name</p>
+                        <p>Album name</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img id="freddie" src="assets/queen.jpeg">
+                        <ion-icon name="play-sharp"></ion-icon>
+                    </div>
+                    <div class="card-body">
+                        <p>Artist name</p>
+                        <p>Album name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+            <div class="text-wrapper">
+                <h5>Preview of Spotify</h5>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+
+            <button>Sign Up</button>
+
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

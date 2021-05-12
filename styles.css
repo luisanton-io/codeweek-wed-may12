@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #121212;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: black;
+    min-width: 200px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.sidebar img {
+    margin-top: 3em;
+    max-width: 70%;
+}
+
+.sidebar ul {
+    margin-top: 2em;
+    padding: 0px;
+    width: 100%;
+}
+
+.sidebar ul li ion-icon {
+    padding: 0px 1ch;
+    font-size: 0.75em;
+}
+
+.sidebar li {
+    list-style: none;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    padding: 1em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.4s linear;
+}
+
+.sidebar li:hover {
+    background-color: rgba(250, 250, 250, 0.098);
+}
+
+.right {
+    flex-grow: 1;
+    color: white;
+}
+
+.right .navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right .navbar > ion-icon {
+    padding: 10px;
+    border-radius: 500px;
+    font-size: 1.5em;
+    background-color: black;
+}
+
+.right .navbar > ion-icon:first-of-type {
+    margin-right: 2ch;
+}
+
+.right .navbar .search-wrapper ion-icon {
+    color: black;
+}
+.right .navbar .search-wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 500px;
+    margin-left: 3em;
+}
+
+.right .navbar .search-wrapper input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    padding: 2em;
+}
+
+.card {
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.4s linear;
+}
+
+.card .card-body p {
+    color: white;
+}
+
+.card:hover {
+    background-color: rgba(250, 250, 250, 0.098);
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#freddie {
+    object-position: 50% 0px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper ion-icon {
+    padding: 20px;
+    background-color: green;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    opacity: 0;
+    transform: translateY(-25%);
+    transition: transform 0.4s linear, opacity 0.3s linear;
+}
+
+.card:hover ion-icon {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    min-height: 60px;
+    width: 100%;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    padding: 10px 2em;
+}
+
+.footer h5 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.footer button {
+    margin: auto 3em auto auto;
+    padding: 20px 60px;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: letter-spacing 0.4s linear;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    letter-spacing: 4px;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+}
